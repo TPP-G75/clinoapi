@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "clinoapi"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+pydantic = "^2.7.1"
+flakeheaven = "^3.3.0"
+pytest = "^8.2.1"
+black = "^24.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
