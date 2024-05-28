@@ -1,2 +1,5 @@
 .flakeheaven_cache
 .pytest_cache
+*.pyc
+*.pyo
+**/__pycache__/
