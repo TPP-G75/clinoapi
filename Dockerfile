@@ -11,6 +11,7 @@ RUN poetry install --no-dev
 
 COPY ./src /code/src
 
-#EXPOSE ${PORT}
+EXPOSE 8080
 
-CMD ["fastapi", "run", "./src/main.py", "--port", "8080"]
+CMD ["python", "./src/main.py"]
+#CMD ["fastapi", "run", "./src/main.py", "--port", "8080"]
