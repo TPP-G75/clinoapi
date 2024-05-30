@@ -353,6 +353,23 @@ files = [
 ]
 
 [[package]]
+name = "es_core_news_md"
+version = "3.7.0"
+description = "Spanish pipeline optimized for CPU. Components: tok2vec, morphologizer, parser, senter, ner, attribute_ruler, lemmatizer."
+optional = false
+python-versions = "*"
+files = [
+    {file = "es_core_news_md-3.7.0.tar.gz", hash = "sha256:440fb9e49969fdb29507c28e95839f94484c18698d7bda24cd72b1c1843335fd"},
+]
+
+[package.dependencies]
+spacy = ">=3.7.0,<3.8.0"
+
+[package.source]
+type = "url"
+url = "https://github.com/explosion/spacy-models/releases/download/es_core_news_md-3.7.0/es_core_news_md-3.7.0.tar.gz"
+
+[[package]]
 name = "fastapi"
 version = "0.110.3"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
@@ -1501,4 +1518,4 @@ wasabi = ">=0.9.1,<1.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "637473f023816b3b32a85e6df0f2fe49bcd054e88e5e36334fc80485f8e95cb8"
+content-hash = "92542273f58c1bb1b059694dd38a4f1c52a6285577bff56420e53e6311244376"
