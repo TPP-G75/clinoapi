@@ -16,8 +16,11 @@ def read_root():
 @app.post("/notes")
 def analyze_note(note: Note):
     doc = nlp(note.text)
-    entities = doc.ents 
-    return {"Entities": list(doc.ents)} #this fails to serialize
+    entities = [
+        {"text": ent.text, "start": ent.start_char, "end": ent.end_char, "label": ent.label_}
+        for ent in doc.ents
+    ]
+    return {"Entities": entities}
 
 if __name__ == "__main__":
     uvicorn.run(app, host='0.0.0.0', port=8080)
